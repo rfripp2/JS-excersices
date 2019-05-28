@@ -10,8 +10,8 @@ Input: 1254859723 Output: 9875543221
 */
 
 function descendingOrder(n) {
-  let arr = n.toString();
-  let numbers = arr.split("").map(x => Number(x));
+  let stringNumbers = n.toString();
+  let numbers = stringNumbers.split("").map(x => Number(x));
   numbers.sort(function(a, b) {
     return b - a;
   });
